@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Customer list</title>
+    <link rel="stylesheet" href="Style.css" />
+    <meta name=" viewport" content="width=device-width, initial-scale=1.0" />
+    
+</head>
+<body>
+    <table>
+        <tr>
+            <tb>
+                <form onsubmit="event.preventDefault(); onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Id</label><label class="validation-error hide" id="idValidationError">This field is required.</label>
+                        <input type="text" name="id" id="id"/>
+                    </div>
+                    <div>
+                        <label>Name</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div>
+                        <label>Surname</label>
+                        <input type="text" name="surname"  id="surname" />
+                    </div>
+                    <div>
+                        <label>AFM</label>
+                        <input type="text" name="afm" id="afm"/>
+                    </div>
+                    <div class="form-action-buttons">
+                       <input type="submit" name="Submit"  >
+                    </div>
+
+                </form>
+            </tb>
+            <tb>
+                <table class="list" id="customerList">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>AFM</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                     </tbody>
+                </table>
+            </tb>
+        </tr>
+       </table>
+     <script src="Script1.js"></script>
+   </body>
+</html>
